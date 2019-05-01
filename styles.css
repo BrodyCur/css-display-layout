@@ -14,8 +14,6 @@ h1 {
 ul {
     list-style: none;
     text-align: center;
-    width: 100%;
-    height: 50px;
     padding: 0;
     margin: 0;
 }
@@ -35,6 +33,7 @@ nav a {
 
 body {
     font-family: helvetica, sans-serif;
+    display: inline-block;
 }
 
 .photo-gallery > p {
@@ -49,11 +48,24 @@ span {
 }
 
 .photo-gallery {
-    margin: auto;
+    margin: auto 40px;
+    display: inline-block;
 }
 
-.photo-gallery-container div {
+.photo-gallery-container {
+    margin: auto;
     display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.photo-box {
+    display: inline-block;
+    width: 32%;
+}
+
+.photo-box > img {
+    width: 100%;
 }
 
 .photo-gallery-container p {
@@ -63,4 +75,10 @@ span {
     text-align: center;
 }
 
-.photo-box
+footer p {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px;
+}
